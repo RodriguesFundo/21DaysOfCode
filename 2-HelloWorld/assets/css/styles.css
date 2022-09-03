@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Code';
+  src: url(fonts/CourierPrime-Regular.ttf) format('truetype');
+}
 
 * {
   padding: 0;
@@ -19,7 +23,8 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Courier New', Courier, monospace;
+  
+  font-family: Code;
 }
 
 
@@ -28,16 +33,13 @@ body{
   font-size: 65px;
 }
 
+/* 
+.light{
+  background-color: #fff;
+  color: #b00de2  ;
+}
 .dark{
   background-color: #131313;
   color: #0de218  ;
-}
-/* 
-.light{
-  background-color: #3c2828;
-  color: #db0ec2;
 } */
 
-body.light{
-  background-color: red;
-}
