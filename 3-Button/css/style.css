@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #050220;
+    color: #fff;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    max-width: 100%;
+
+}
+.container button{
+    background-color: #12085c;
+    border: none;
+    color: #03e9f4;
+    letter-spacing: 3px;
+    transition: .9s;
+    overflow: hidden;
+    flex-direction: column;
+    padding: 12px 13px;
+}
+button:nth-child(1){
+    -webkit-box-reflect: above .3px linear-gradient(transparent, #fff);
+}
+button:nth-child(2){
+    -webkit-box-reflect: below .3px linear-gradient(transparent, #fff);
+}
+.container .btnClick{
+    
+}
+.container button:hover{
+    background-color: #fff;
+    animation: linear infinite;
+}
