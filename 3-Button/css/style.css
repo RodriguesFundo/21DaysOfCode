@@ -18,8 +18,17 @@ body{
     justify-content: space-evenly;
     width: 80%;
     max-width: 100%;
-
 }
+
+
+@media  (max-width: 650px){
+    .container{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+
 .container button{
     background-color: #12085c;
     border: none;
@@ -30,16 +39,53 @@ body{
     flex-direction: column;
     padding: 12px 13px;
 }
-button:nth-child(1){
-    -webkit-box-reflect: above .3px linear-gradient(transparent, #fff);
+button:nth-child(1):hover{
+    cursor: pointer;
+    -webkit-box-reflect: above ;
+    background-color: #fff;
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
 }
+
+/* Button 2 */
 button:nth-child(2){
-    -webkit-box-reflect: below .3px linear-gradient(transparent, #fff);
+    display: flex;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    
+
 }
-.container .btnClick{
+.btnClickScript{
+    cursor: pointer;
+    border-radius: 50%;
+    background: linear-gradient(#14ffe9,#ffeb3b,#ff00e0);
+    box-shadow: 0 0 20px -8px #14ffe9,
+                0 0 20px -8px #ffeb3b,
+                0 0 20px -8px #ff00e0;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* Button 3 */
+button:nth-child(3){
+    filter: hue-rotate(290deg);
+    
     
 }
-.container button:hover{
+button:nth-child(3):hover{
+    cursor: pointer;
+    -webkit-box-reflect: below .3px linear-gradient(transparent, #fff);
     background-color: #fff;
-    animation: linear infinite;
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+
 }
+
