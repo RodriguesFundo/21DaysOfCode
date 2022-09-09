@@ -6,4 +6,4 @@ function changeTime(){
     btnClick.className="btnClickScript";
 }
 
-addEventListener('click', changeTime)
+btnClick.addEventListener('click', changeTime)
