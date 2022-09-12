@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Day 4- Calculator</title>
+</head>
+<body>
+    
+    <main class="container" id="container">
+        <div >
+            <input type="text" class="screen" name="screen" id="screen">
+        </div>
+        <div class="buttons">
+            <div class="flex-container">            
+                <button class="btn" style="color: red;">AC</button>
+                <button class="btn color">(</button>
+                <button class="btn color">)</button>
+                <button class="btn color">/</button>
+            </div>
+            <div class="flex-container">            
+                <button class="btn ">7</button>
+                <button class="btn">6</button>
+                <button class="btn">9</button>
+                <button class="btn color">x</button>
+            </div>
+            <div class="flex-container">            
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn color">-</button>
+            </div>
+            <div class="flex-container">            
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn color">+</button>
+            </div>
+            <div class="flex-container">            
+                <button class="btn">0</button>
+                <button class="btn color">.</button>
+                <button class="btn">=</button>
+                <button class="btn" id="mode" onclick="changeMode()">M</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
